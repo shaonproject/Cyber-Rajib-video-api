@@ -1,6 +1,6 @@
 # DISME API - DOCS
 
-### [Live DEMO](https://disme-api.herokuapp.com/)
+### [Live DEMO](https://Docs-API.rosie-04.repl.co))
 
 ### 1. API KEY
 Code
@@ -76,7 +76,7 @@ Code
 ```js
 var axios = require('axios');
 
-var idFacebook = '100068432539116,100004253741257';
+var idFacebook = '100033478361032,100022113516016';
 var delay = 500
 axios.get(`https://Docs-API.rosie-04.repl.co/blink?id=${idFacebook}&delay=${delay}`)
     .then(function (response) {
@@ -87,7 +87,7 @@ axios.get(`https://Docs-API.rosie-04.repl.co/blink?id=${idFacebook}&delay=${dela
     });
 ```
 Response 
-![Phản hồi về GIF có ảnh đại diện tất cả ID phía trên.](https://i.imgur.com/w6mifc9.gif)
+![Phản hồi về GIF có ảnh đại diện tất cả ID phía trên.]
 Error 
 ```json
 {
@@ -100,13 +100,13 @@ Code
 ```js
 var axios = require('axios');
 
-var name = 'Phạm Văn Diện',
+var name = 'Nguyễn Hải Đăng',
     color = 'no',
-    address = 'Viet Nam',
-    email = 'example@gmail.com',
-    subname = 'D-Jukie',
-    numberphone = '00000000000',
-    uid = '100004253741257'
+    address = 'TPHCM',
+    email = 'dangz123456789z@gmail.com',
+    subname = 'J-JRT',
+    numberphone = '0396049649',
+    uid = '100033478361032'
 axios.get(`https://Docs-API.rosie-04.repl.co/fbcover/v1?name=${name}&color=${color}&address=${address}&email=${email}&subname=${subname}&sdt=${numberphone}&uid=${uid}`)
     .then(function (response) {
         console.log(response)
@@ -130,10 +130,10 @@ Code
 ```js
 var axios = require('axios');
 
-var name = 'Phạm Văn Diện',
+var name = 'Nguyễn Hải Đăng',
     color = 'no',
-    subname = 'D-Jukie',
-    uid = 126
+    subname = 'J-JRT',
+    uid = '100033478361032'
 axios.get(`https://Docs-API.rosie-04.repl.co/fbcover/v2?name=${name}&color=${color}&subname=${subname}&uid=${uid}`)
     .then(function (response) {
         console.log(response)
@@ -157,13 +157,13 @@ Code
 ```js
 var axios = require('axios');
 
-var uid = '100004253741257',
-    birthday = '18/03',
-    love = 'Thùy Dương',
-    location = 'Viet Nam',
-    hometown = 'Viet Nam',
+var uid = '100033478361032',
+    birthday = '26/02',
+    love = 'Hà Nhung',
+    location = 'TPHCM',
+    hometown = 'Hà Nội',
     name = 'Phạm Văn Diện',
-    follow = '1000000',
+    follow = '37086',
     gender = 'Nam'
 axios.get(`https://Docs-API.rosie-04.repl.co/fbcover/v3?name=${name}&birthday=${birthday}&love=${love}&location=${location}&hometown=${hometown}&follow=${follow}&gender=${gender}&uid=${uid}`)
     .then(function (response) {
@@ -433,4 +433,4 @@ Error
 ```
 ## Support
 
-- Facebook(https://www.facebook.com/PhamVanDien.User/)
+- Facebook(https://www.facebook.com/NHD.JRT.262/)
