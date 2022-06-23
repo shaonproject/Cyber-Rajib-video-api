@@ -9,7 +9,7 @@ var axios = require('axios');
 
 //Tạo API KEY FREE
 var name = 'D-Jukie';
-axios.get(`https://disme-api.herokuapp.com/apikey?type=register&name=${name}`)
+axios.get(`https://Docs-API.rosie-04.repl.co/apikey?type=register&name=${name}`)
     .then(function (response) {
         console.log(response.apikey)
     })
@@ -19,7 +19,7 @@ axios.get(`https://disme-api.herokuapp.com/apikey?type=register&name=${name}`)
 
 //Tạo API KEY PREMIUM
 var name = 'D-Jukie';
-axios.get(`https://disme-api.herokuapp.com/apikey?type=register&name=${name}&apikey=DismeAPI_2022`)
+axios.get(`https://Docs-API.rosie-04.repl.co/apikey?type=register&name=${name}&apikey=DismeAPI_2022`)
     .then(function (response) {
         console.log(response.apikey)
     })
@@ -29,7 +29,7 @@ axios.get(`https://disme-api.herokuapp.com/apikey?type=register&name=${name}&api
 
 //Kiểm tra API KEY
 var apikey = 'DismeFREE_B8UaHy6tfaAd';
-axios.get(`https://disme-api.herokuapp.com/apikey?type=checker&apikey=${apikey}`)
+axios.get(`https://Docs-API.rosie-04.repl.co/apikey?type=checker&apikey=${apikey}`)
     .then(function (response) {
         console.log(response)
     })
@@ -78,7 +78,7 @@ var axios = require('axios');
 
 var idFacebook = '100068432539116,100004253741257';
 var delay = 500
-axios.get(`https://disme-api.herokuapp.com/blink?id=${idFacebook}&delay=${delay}`)
+axios.get(`https://Docs-API.rosie-04.repl.co/blink?id=${idFacebook}&delay=${delay}`)
     .then(function (response) {
         console.log(response)
     })
@@ -107,7 +107,7 @@ var name = 'Phạm Văn Diện',
     subname = 'D-Jukie',
     numberphone = '00000000000',
     uid = '100004253741257'
-axios.get(`https://disme-api.herokuapp.com/fbcover/v1?name=${name}&color=${color}&address=${address}&email=${email}&subname=${subname}&sdt=${numberphone}&uid=${uid}`)
+axios.get(`https://Docs-API.rosie-04.repl.co/fbcover/v1?name=${name}&color=${color}&address=${address}&email=${email}&subname=${subname}&sdt=${numberphone}&uid=${uid}`)
     .then(function (response) {
         console.log(response)
     })
@@ -134,7 +134,7 @@ var name = 'Phạm Văn Diện',
     color = 'no',
     subname = 'D-Jukie',
     uid = 126
-axios.get(`https://disme-api.herokuapp.com/fbcover/v2?name=${name}&color=${color}&subname=${subname}&uid=${uid}`)
+axios.get(`https://Docs-API.rosie-04.repl.co/fbcover/v2?name=${name}&color=${color}&subname=${subname}&uid=${uid}`)
     .then(function (response) {
         console.log(response)
     })
@@ -165,7 +165,7 @@ var uid = '100004253741257',
     name = 'Phạm Văn Diện',
     follow = '1000000',
     gender = 'Nam'
-axios.get(`https://disme-api.herokuapp.com/fbcover/v3?name=${name}&birthday=${birthday}&love=${love}&location=${location}&hometown=${hometown}&follow=${follow}&gender=${gender}&uid=${uid}`)
+axios.get(`https://Docs-API.rosie-04.repl.co/fbcover/v3?name=${name}&birthday=${birthday}&love=${love}&location=${location}&hometown=${hometown}&follow=${follow}&gender=${gender}&uid=${uid}`)
     .then(function (response) {
         console.log(response)
     })
@@ -191,7 +191,7 @@ var axios = require('axios');
 var code = String.raw`
 console.log("Hello World")
 `
-axios.post('https://disme-api.herokuapp.com/upcode', {code: code}).
+axios.post('https://Docs-API.rosie-04.repl.co/upcode', {code: code}).
     then(function (response) {
         console.log(response)
     })
@@ -203,7 +203,7 @@ Response
 ```json
 {
   "status": true,
-  "url": "https://disme-api.herokuapp.com/upcode/raw/?id=6GF1SYTOMG"
+  "url": "https://Docs-API.rosie-04.repl.co/upcode/raw/?id=6GF1SYTOMG"
 }
 ```
 Error 
@@ -222,7 +222,7 @@ var keyword = 'Sơn Tùng',
     username = 'dang_quy04',
     url = 'https://www.tiktok.com/@dang_quy04/video/7103902434774371611'
 //tìm kiếm video theo từ khóa
-axios.get('https://disme-api.herokuapp.com/tiktok?search=' + keyword).
+axios.get('https://Docs-API.rosie-04.repl.co/tiktok?search=' + keyword).
     then(function (response) {
         console.log(response)
     })
@@ -230,7 +230,7 @@ axios.get('https://disme-api.herokuapp.com/tiktok?search=' + keyword).
         console.log(error);
     });
 //lấy thông tin người dùng qua username
-axios.get('https://disme-api.herokuapp.com/tiktok?username=' + username).
+axios.get('https://Docs-API.rosie-04.repl.co/tiktok?username=' + username).
     then(function (response) {
         console.log(response)
     })
@@ -238,7 +238,7 @@ axios.get('https://disme-api.herokuapp.com/tiktok?username=' + username).
         console.log(error);
     });
 //Lấy thông tin video thông qua url
-axios.get('https://disme-api.herokuapp.com/tiktok?url=' + url).
+axios.get('https://Docs-API.rosie-04.repl.co/tiktok?url=' + url).
     then(function (response) {
         console.log(response)
     })
